@@ -12,26 +12,24 @@
     <div class="container">
       <h1>Welcome to the puppy marketplace!</h1>
       <h3>Please fill out your information to order a puppy:</h3>
-      <form>
-        <div class="form-group">
+      <form id="customerInfo">
+      <div class="form-group">
           <label for="name">Name:</label>
-          <input id="name" type="text" class="form-control">
-        </div>
+          <input id="name" class="form-control" type="text">
+      </div>
         <div class="form-group">
           <label for="address">Address:</label>
-          <input id="address" type="text" class="form-control">
+          <input id="address" class="form-control" type="text">
         </div>
-        <button type="submit" name="btn">Submit</button>
+        <button type="submit" class="btn">Submit</button>
       </form>
 
-      <div class="displayReceipt">
+      <div id="displayReceipt">
         <h3>Thank you for shopping with us! Here is your shipping confirmation:</h3>
-        <div id="nameOutput">
-        </div>
-        <div id="addressOutput">
-        </div>
-
+        <span id="nameOutput"></span>
+        <span id="addressOutput"></span>
       </div>
+
     </div>
   </body>
 </html>

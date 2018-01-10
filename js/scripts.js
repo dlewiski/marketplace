@@ -1,8 +1,14 @@
-$(document).ready(function(){
-  $("form#name").submit(function(event){
+$(document).ready(function() {
+  $("#customerInfo").submit(function(event) {
+
     var name = $("#name").val();
+    var address = $("#address").val();
+
     $("#nameOutput").text(name);
-    event.preventDefault(event);
+    $("#addressOutput").text(address);
+
+    $("#displayReceipt").show();
+    event.preventDefault();
   });
 
 });
