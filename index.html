@@ -8,7 +8,9 @@
     <script src="js/scripts.js"></script>
     <meta charset="utf-8">
   </head>
+
   <body>
+<div class="background-color">
     <div class="container">
       <h1>Welcome to the puppy marketplace!</h1>
       <h3>Please fill out your information to order a puppy:</h3>
@@ -23,13 +25,25 @@
         </div>
         <button type="submit" class="btn">Submit</button>
       </form>
-
       <div id="displayReceipt">
         <h3>Thank you for shopping with us! Here is your shipping confirmation:</h3>
-        <span id="nameOutput"></span>
-        <span id="addressOutput"></span>
+        <div class="column">
+          <p>Name: <span id="nameOutput"></span></p>
+        </div>
+        <div class="column">
+          <p>Address: <span id="addressOutput"></span></p>
+        </div>
+        <h3>Please select your payment method:</h3>
+        <select class="form-control" id="payment">
+          <option>Cash</option>
+          <option>Credit</option>
+          <option>Carrier pigeon</option>
+          <option>Dr. Dre Albums</option>
+        </select>
       </div>
 
     </div>
+    </div>
   </body>
+
 </html>

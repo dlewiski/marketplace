@@ -1,3 +1,18 @@
 #displayReceipt {
   display: none;
 }
+
+h1 {
+  font-style: italic;
+  background-color: lightblue;
+}
+
+.column {
+  font-size: 20px;
+  text-align: center;
+}
+
+h1, h3 {
+  text-align: center;
+
+}
